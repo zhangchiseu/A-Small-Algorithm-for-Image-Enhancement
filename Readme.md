@@ -11,4 +11,4 @@
 
 - result文件夹为经过批量处理的图片，其中经过了阈值化、滤波处理和jpg转png操作
 
-- matlabNum文件夹包含MNISTrain.m和train_dataset文件夹。其中MNISTrain.m为基于matlab深度学习包的数字识别程序，train_dataset文件夹为数字识别程序训练所用的训练集
+-
