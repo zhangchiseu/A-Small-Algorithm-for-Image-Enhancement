@@ -25,32 +25,7 @@ with fluid.dygraph.guard():
     # 定义优化器
     opt = fluid.optimizer.SGDOptimizer(learning_rate=0.001,
                                        parameter_list=model.parameters())
-"""
-with fluid.dygraph.guard():
-    model = minist_model()
-    model.train()
-    train_loader = paddle.batch(paddle.dataset.mnist.train(),
-                                batch_size=16)
-    # 定义优化器
-    opt = fluid.optimizer.SGDOptimizer(learning_rate=0.001,
-                                       parameter_list=model.parameters())
-    for epoch_id in range(100):
-        for batch_id, data in enumerate(train_loader()):
-            image_data = np.array([x[0] for x in data]).astype('float32')
-            label_data = np.array([x[1] for x in data]).astype('float32').reshape(-1, 1)
-            image = fluid.dygraph.to_variable(image_data)
-            label = fluid.dygraph.to_variable(label_data)
 
-            pre = model(image)
-            loss = fluid.layers.square_error_cost(pre, label)
-            avg_loss = fluid.layers.mean(loss)
-            if batch_id != 0 and batch_id % 1000 == 0:
-                print("epoch: {}, batch: {}, loss is: {}".format(epoch_id, batch_id, avg_loss.numpy()))
-            avg_loss.backward()
-            opt.minimize(avg_loss)
-            model.clear_gradients()
-fluid.save_dygraph(model.state_dict(), 'mnist')
-"""
 import matplotlib.image as Img
 import matplotlib.pyplot as plt
 
@@ -70,7 +45,7 @@ def load_image(img_path):
 with fluid.dygraph.guard():
     model =minist_model()
     params_file_path = 'mnist'
-    img_path = 'C:/Users/15729/Desktop/DIPtask2/Homework 2/ywj-a000_2.jpg'
+    img_path = 'xxx.jpg'
 # 加载模型参数
     model_dict, _ = fluid.load_dygraph("mnist")
     model.load_dict(model_dict)
