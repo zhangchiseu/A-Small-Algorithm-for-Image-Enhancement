@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import PIL.Image as Image
 #读入图片
-image = cv2.imread("C:/Users/15729/Desktop/DIPtask2/Homework 2/ywj-a000_1.jpg")
+image = cv2.imread("xxx.jpg")
 image = cv2.resize(image, (500, 500))
 #cv2.imshow("initial",image)
 #阈值化
