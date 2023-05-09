@@ -1,9 +1,9 @@
 import os
 import cv2
 import numpy as np
-input_folder = "C:/Users/15729/Desktop/DIPtask2/Homework 2"
-output_folder = "C:/Users/15729/Desktop/DIPtask2/result"
-media_folder = "C:/Users/15729/Desktop/DIPtask2/media_result"
+input_folder = "xxxpath"
+output_folder = "yyypath"
+media_folder = "zzzpath"
 for filename in os.listdir(input_folder):
     if filename.endswith(".jpg"):
         # Read image
