@@ -5,7 +5,7 @@
 
 - single_processing.py为单个处理图片的代码，将提供的一张图片经过阈值化、滤波、转格式得到png图片
 
-- paddleNum.py为基于paddlepaddle的数字识别程序
+- paddleNum.py为基于paddlepaddle的数字识别程序,识别结果并不理想
 
 - media_result文件夹为经过批量处理的图片，其中只经过了阈值化和滤波处理
 
