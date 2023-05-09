@@ -1,7 +1,7 @@
 import cv2
 
 # Read image
-img = cv2.imread("C:/Users/15729/PycharmProjects/pythonProject5/thresholding.jpg")
+img = cv2.imread("xxx.jpg")
 
 def onSizeChange(x):
     position = cv2.getTrackbarPos("cannyBar", "Bar")
